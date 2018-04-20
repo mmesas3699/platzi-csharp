@@ -1,0 +1,95 @@
+Evolución de C#: Pasado, presente y futuro
+	
+	Es un lenguaje de proposito general, se puede usar para hace multiples tipos
+	de aplicaciones:
+		- Web
+		- Consola
+		- Backend
+		- Desktop
+		- Servicios
+		- Mobile apps
+		- IoT
+		- User mode drivers
+
+	No esta atado a ninguna plataforma:
+		- Microsoft
+		- Apple:
+			OSX
+			iOS
+		- Linux
+
+	"No hay un escenario en el que c# no tenga cabida"
+
+	¿En que mercado se usa?
+		- Video juegos
+		- Agencias digitales
+		- Aplicaciones corporativas
+		- Banca
+		- Gobierno
+		- Seguros
+		- Fábricas de software
+
+	** LOB: Aplicaciones de linea de negocio
+
+	** LinQ: Permite hacer consultas a una base de datos usando el lenguaje de programación,
+		sin SQL un poco como el ORM de python.
+
+
+Entornos de trabajo que existen para C#
+	
+	Para desarrollora software en C# se necesitan basicamente: Un editor y un Compilador.
+
+
+Paradigmas de programación que soporta C#
+
+	- Orientado a objetos
+	- Imperativo
+	- Funcional
+	- Dinámico
+	- Meta programación (orientado a atributos)
+
+	** Lenguaje de programación dinámico: es un lenguaje de programación en el
+		que las operaciones realizadas en tiempo de compilación pueden realizarse en tiempo de ejecución.
+
+	** Lenguajes de programación funcionales: son aquellos lenguajes donde las variables
+		no tienen estado — no hay cambios en éstas a lo largo del tiempo — y
+		son inmutables — no pueden cambiarse los valores a lo largo de la ejecución.
+
+	** Un lenguaje interpretado: es un lenguaje de programación para el que la mayoría de
+		sus implementaciones ejecuta las instrucciones directamente, sin una previa compilación
+		del programa a instrucciones en lenguaje máquina.
+
+	Cómo funciona C#
+			Interpretado
+			Compilado
+			Nativo
+			JIT 
+
+		C# es un lenguaje Compilado: que complia (convierte a binario) solo los metodos que se llamen, no todo el código, gaurda esa 
+		compilación en la cache para que la proxima vez	que sea llamado se use el binario que esta cacheado. El JIT 
+		(Just in time compiler) es que se encarga de convertir el binario de c# a lenguaje nativo de cada maquina.
+
+	** Compilación económica: Cuando el dispositivo tiene recursos limitados, Ejemplo: un smartwatch:
+
+		Toma el lenguaje intermedio (binario de C#) < ------
+				|											|
+				|											|
+				v 											|
+			Econo JIT Compiler 								|
+				| 											|
+				|											| Cada vez que necesite ejecutar sigue este ciclo, no guarda nada en memoria
+				v 											|
+			Lo convierte a código nativo 					|
+				| 											| 
+				| 											|
+				v 											|
+			Ejecuta ----------------------------------------
+
+	** Compilación normal: Cuando tengo una cantidad de memoria considerable.
+
+		En este proceso cuando la instrucción se llame el JIT va a guardar el codigo nativo en cache y asi la proxima vez que se llame
+		no lo va a compilar si no que lo va a tomar desde la cache.
+
+	** Compilación previa: Convieter a codig nativo sin ser interpretado.
+
+	
